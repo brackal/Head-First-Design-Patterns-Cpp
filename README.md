@@ -1,2 +1,2 @@
-# Head-First-Design-Patterns
+# Head-First-Design-Patterns-with-C++
 Head First Design Patterns by Eric Freeman
