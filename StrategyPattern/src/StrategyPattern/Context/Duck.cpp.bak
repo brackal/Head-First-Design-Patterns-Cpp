@@ -1,0 +1,45 @@
+///////////////////////////////////////////////////////////
+//  Duck.cpp
+//  Implementation of the Class Duck
+//  Created on:      08-Jan-2024 11:33:42
+//  Original author: abrack
+///////////////////////////////////////////////////////////
+
+#include "Duck.h"
+
+
+
+
+Duck::Duck(){
+
+}
+
+
+Duck::~Duck(){
+
+}
+
+
+void Duck::performFly(){
+
+}
+
+
+void Duck::performQuack(){
+
+}
+
+
+void Duck::setFlyBehavior(IFlyBehavior* flyBehavior){
+
+}
+
+
+void Duck::setQuackBehavior(IQuackBehavior* quackBehavior){
+
+}
+
+
+void Duck::swim(){
+
+}
