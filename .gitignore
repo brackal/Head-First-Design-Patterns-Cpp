@@ -33,3 +33,7 @@
 
 *.vs
 *Debug
+
+# EA Project
+*.eapx
+*.ldb
