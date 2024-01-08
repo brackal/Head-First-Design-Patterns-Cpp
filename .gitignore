@@ -37,3 +37,6 @@
 # EA Project
 *.eapx
 *.ldb
+
+# CMake
+build
