@@ -9,9 +9,9 @@
 
 
 MilkDecorator::MilkDecorator(Beverage* beverage){
-	mBeverage = beverage;
-	mDescription = "Milk";
-	mCost = (float)0.10;
+    mBeverage = beverage;
+    mDescription = "Milk";
+    mCost = (float)0.10;
 }
 
 
@@ -26,17 +26,19 @@ MilkDecorator::~MilkDecorator(){
 
 std::string MilkDecorator::getDescription(){
 
-	//Rufe Operatuion auf der Component auf und füge eigenes Verhalten zu
-	std::string str = mBeverage->getDescription();
-	str.append(", ");
-	str.append(mDescription);
-	return str;
+    //Rufe Operation auf der Component auf und fuege eigenes Verhalten zu
+    //Call oparation on the component and add own behavior
+    std::string str = mBeverage->getDescription();
+    str.append(", ");
+    str.append(mDescription);
+    return str;
 }
 
 
 float MilkDecorator::getCost(){
 
-	//Rufe Operatuion auf der Component auf und füge eigenes Verhalten zu
-	float cost = mBeverage->getCost() + mCost;
-	return cost;
+    //Rufe Operation auf der Component auf und fuege eigenes Verhalten zu
+    //Call oparation on the component and add own behavior
+    float cost = mBeverage->getCost() + mCost;
+    return cost;
 }
