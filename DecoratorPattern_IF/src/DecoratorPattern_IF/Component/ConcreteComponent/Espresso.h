@@ -14,14 +14,10 @@ class Espresso : public Beverage
 {
 
 public:
-	Espresso();
-	virtual ~Espresso();
-	virtual std::string getDescription();
-	virtual float getCost();
-
-private:
-	std::string mDescription;
-	float mCost;
+    Espresso();
+    virtual ~Espresso();
+    virtual std::string getDescription();
+    virtual float getCost();
 
 };
 #endif // !defined(EA_C2DF0C63_5250_4dc9_A87A_4A4C1D5F8DEB__INCLUDED_)

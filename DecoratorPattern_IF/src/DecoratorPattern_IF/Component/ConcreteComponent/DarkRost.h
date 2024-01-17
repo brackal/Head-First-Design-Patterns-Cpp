@@ -14,14 +14,10 @@ class DarkRost : public Beverage
 {
 
 public:
-	DarkRost();
-	virtual ~DarkRost();
-	virtual std::string getDescription();
-	virtual float getCost();
-
-private:
-	std::string mDescription;
-	float mCost;
-
+    DarkRost();
+    virtual ~DarkRost();
+    virtual std::string getDescription();
+    virtual float getCost();
+    
 };
 #endif // !defined(EA_7D683A16_5FB4_48f5_9970_63124CDBF6BB__INCLUDED_)

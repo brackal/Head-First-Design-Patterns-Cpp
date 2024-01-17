@@ -14,15 +14,13 @@ class BeverageDecorator : public Beverage
 {
 
 public:
-	BeverageDecorator();
-	virtual ~BeverageDecorator();
-	virtual std::string getDescription() =0;
-	virtual float getCost() =0;
+    BeverageDecorator();
+    virtual ~BeverageDecorator();
+    virtual std::string getDescription() =0;
+    virtual float getCost() =0;
 
 protected:
-	Beverage* mBeverage;
-	std::string mDescription;
-	float mCost;
+    Beverage* mBeverage;
 
 };
 #endif // !defined(EA_07FD9043_5B2B_4db5_B9EA_C7B7B8F40304__INCLUDED_)

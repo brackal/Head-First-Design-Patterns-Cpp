@@ -14,14 +14,17 @@ class Beverage
 {
 
 public:
-	Beverage(){
+    Beverage(){
 
-	}
-	virtual ~Beverage(){
+    }
+    virtual ~Beverage(){
 
-	}
-	virtual std::string getDescription() =0;
-	virtual float getCost() =0;
+    }
+    virtual std::string getDescription() =0;
+    virtual float getCost() =0;
 
+protected:
+    std::string mDescription;
+    float mCost;
 };
 #endif // !defined(EA_2B2D213D_FBF2_43e5_9F80_294973E5CDE6__INCLUDED_)
