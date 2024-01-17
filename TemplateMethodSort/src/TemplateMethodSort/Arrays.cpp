@@ -24,25 +24,25 @@ template <class T> Arrays<T>::~Arrays() {
 
 template <class T> void Arrays<T>::sort(T a, int size) {
 
-	int* mData;
+    int* mData;
 
-	if (size > 0)
-	{
-		mData = new int[size];
-	}
-	else
-	{
-		mData = nullptr;
-	}
+    if (size > 0)
+    {
+        mData = new int[size];
+    }
+    else
+    {
+        mData = nullptr;
+    }
 
 
 
-	for (int j = 0; j < size; j++)
-	{
-		*mData = a[j];
-		std::cout << "sort: " << a[j] << std::endl;
-		std::cout << "mData: " << *mData << std::endl;
-		mData++;
-	}
+    for (int j = 0; j < size; j++)
+    {
+        *mData = a[j];
+        std::cout << "sort: " << a[j] << std::endl;
+        std::cout << "mData: " << *mData << std::endl;
+        mData++;
+    }
 }
 #endif

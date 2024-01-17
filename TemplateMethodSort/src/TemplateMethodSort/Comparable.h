@@ -12,13 +12,13 @@ class Comparable
 {
 
 public:
-	Comparable(){
+    Comparable(){
 
-	}
-	virtual ~Comparable(){
+    }
+    virtual ~Comparable(){
 
-	}
-	virtual int compareTo(Comparable* comp) =0;
+    }
+    virtual int compareTo(Comparable* comp) =0;
 
 };
 #endif // !defined(EA_F202D22A_ECD4_4bbd_8F93_0520A1D310B6__INCLUDED_)

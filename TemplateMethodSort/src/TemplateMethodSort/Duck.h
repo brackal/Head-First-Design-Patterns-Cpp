@@ -15,15 +15,15 @@ class Duck : public Comparable
 {
 
 public:
-	Duck();
-	Duck(std::string name, int weight);
-	virtual ~Duck();
-	virtual int compareTo(Comparable* comp);
-	int geWeight();
+    Duck();
+    Duck(std::string name, int weight);
+    virtual ~Duck();
+    virtual int compareTo(Comparable* comp);
+    int geWeight();
 
 private:
-	std::string mName;
-	int mWeight;
+    std::string mName;
+    int mWeight;
 
 };
 #endif // !defined(EA_40A25BDB_2726_49dc_8014_8E4136C423F1__INCLUDED_)

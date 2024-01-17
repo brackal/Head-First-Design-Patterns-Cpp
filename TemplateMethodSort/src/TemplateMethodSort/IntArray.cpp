@@ -11,7 +11,7 @@ IntArray::IntArray(){
 }
 
 IntArray::IntArray(int value){
-  mData = value;
+    mData = value;
 }
 
 
@@ -22,26 +22,26 @@ IntArray::~IntArray(){
 
 int IntArray::compareTo(Comparable* comp){
 
-  IntArray* tmp = (IntArray*)comp;
+    IntArray* tmp = (IntArray*)comp;
 
-  if (this->getValue() < tmp->getValue())
-  {
-    return -1;
-  }
-  else if (this->getValue() == tmp->getValue())
-  {
-	return 0;
-}
-  else //this->getValue() > tmp->getValue()
-  {
-    return 1;
-  }
+    if (this->getValue() < tmp->getValue())
+    {
+        return -1;
+    }
+    else if (this->getValue() == tmp->getValue())
+    {
+        return 0;
+    }
+    else //this->getValue() > tmp->getValue()
+    {
+        return 1;
+    }
 }
 
 
 
 int IntArray::getValue(){
 
-  return mData;
+    return mData;
 }
 

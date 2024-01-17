@@ -16,13 +16,13 @@ class Client
 {
 
 public:
-	Client();
-	virtual ~Client();
-	void run();
+    Client();
+    virtual ~Client();
+    void run();
 
 private:
-	void displayDuckArray(Duck* duck, int length);
-	void displayIntArray(IntArray* intArray, int length);
+    void displayDuckArray(Duck* duck, int length);
+    void displayIntArray(IntArray* intArray, int length);
 
 };
 #endif // !defined(EA_FAB0C4DB_8F76_41f3_A730_AD5908E096FE__INCLUDED_)

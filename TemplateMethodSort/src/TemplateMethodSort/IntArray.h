@@ -14,14 +14,14 @@ class IntArray : public Comparable
 {
 
 public:
-	IntArray();
-	IntArray(int value);
-	virtual ~IntArray();
-	virtual int compareTo(Comparable* comp);
-	int getValue();
+    IntArray();
+    IntArray(int value);
+    virtual ~IntArray();
+    virtual int compareTo(Comparable* comp);
+    int getValue();
 
 private:
-	int mData;
+    int mData;
 
 };
 #endif // !defined(EA_8E05A6A7_86E6_4785_893B_31EFCE6A83BF__INCLUDED_)
