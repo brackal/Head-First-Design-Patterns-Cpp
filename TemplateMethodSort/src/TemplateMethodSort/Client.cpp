@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////
 //  Client.cpp
 //  Implementation of the Class Client
-//  Created on:      29-Nov-2023 22:02:37
+//  Created on:      19-Jan-2024 08:17:01
 //  Original author: abrack
 ///////////////////////////////////////////////////////////
 
@@ -39,19 +39,19 @@ void Client::run(){
     this->displayDuckArray(duckArray, 4);
 
 
-    IntArray a(22);
-    IntArray b(33);
-    IntArray c(11);
+    IntValue a(22);
+    IntValue b(33);
+    IntValue c(11);
 
-    IntArray intArrays[3] = { a, b, c };
+    IntValue intArray[3] = { a, b, c };
 
-    std::cout << "intArrays bevor sort:" << std::endl;
-    this->displayIntArray(intArrays, 3);
+    std::cout << "intArray bevor sort:" << std::endl;
+    this->displayIntArray(intArray, 3);
 
-    Arrays<IntArray>::sort(intArrays, 3);
+    Arrays<IntValue>::sort(intArray, 3);
 
-    std::cout << "intArrays after sort:" << std::endl;
-    this->displayIntArray(intArrays, 3);
+    std::cout << "intArray after sort:" << std::endl;
+    this->displayIntArray(intArray, 3);
 
     while (true)
     {
@@ -63,14 +63,14 @@ void Client::displayDuckArray(Duck* duck, int length) {
     Duck* duckTmp = duck;
 
     for (int i = 0; i < length; i++, duckTmp++) {
-        std::cout << "duck: " << duckTmp->geWeight() << std::endl;
+        std::cout << "duck: " << duckTmp->getWeight() << std::endl;
     }
 }
 
 
-void Client::displayIntArray(IntArray* intArray, int length){
+void Client::displayIntArray(IntValue* intValue, int length){
 
-    IntArray* intArrayTmp = intArray;
+    IntValue* intArrayTmp = intValue;
 
     for (int i = 0; i < length; i++, intArrayTmp++) {
         std::cout << "intArray: " << intArrayTmp->getValue() << std::endl;

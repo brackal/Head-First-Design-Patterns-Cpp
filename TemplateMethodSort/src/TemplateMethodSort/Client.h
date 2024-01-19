@@ -1,28 +1,28 @@
 ///////////////////////////////////////////////////////////
 //  Client.h
 //  Implementation of the Class Client
-//  Created on:      29-Nov-2023 22:02:37
+//  Created on:      19-Jan-2024 08:17:01
 //  Original author: abrack
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_FAB0C4DB_8F76_41f3_A730_AD5908E096FE__INCLUDED_)
-#define EA_FAB0C4DB_8F76_41f3_A730_AD5908E096FE__INCLUDED_
+#if !defined(EA_6C4F8BA6_22FE_4a3a_90E9_3987BECD007A__INCLUDED_)
+#define EA_6C4F8BA6_22FE_4a3a_90E9_3987BECD007A__INCLUDED_
 
 #include "Arrays.h"
-#include "IntArray.h"
+#include "IntValue.h"
 #include "Duck.h"
 
 class Client
 {
 
 public:
-    Client();
-    virtual ~Client();
-    void run();
+	Client();
+	virtual ~Client();
+	void run();
 
 private:
-    void displayDuckArray(Duck* duck, int length);
-    void displayIntArray(IntArray* intArray, int length);
+	void displayDuckArray(Duck* duck, int length);
+	void displayIntArray(IntValue* intValue, int length);
 
 };
-#endif // !defined(EA_FAB0C4DB_8F76_41f3_A730_AD5908E096FE__INCLUDED_)
+#endif // !defined(EA_6C4F8BA6_22FE_4a3a_90E9_3987BECD007A__INCLUDED_)

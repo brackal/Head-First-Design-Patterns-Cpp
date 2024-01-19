@@ -1,20 +1,25 @@
 ///////////////////////////////////////////////////////////
 //  Arrays.h
 //  Implementation of the Class Arrays
-//  Created on:      29-Nov-2023 22:02:37
+//  Created on:      19-Jan-2024 08:17:01
 //  Original author: abrack
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_5CBD0DB0_655C_49e3_8F55_23DA2EE4E272__INCLUDED_)
-#define EA_5CBD0DB0_655C_49e3_8F55_23DA2EE4E272__INCLUDED_
+#if !defined(EA_76DDC13C_14DA_4ff0_9539_A8B13C7030D9__INCLUDED_)
+#define EA_76DDC13C_14DA_4ff0_9539_A8B13C7030D9__INCLUDED_
 
-
-template <class T> class Arrays
+template<class T>
+class Arrays
 {
 
 public:
-    Arrays();
-    virtual ~Arrays();
+    Arrays(){
+
+    }
+
+    virtual ~Arrays(){
+
+    }
 
     static void sort(T* a, int size);
 
@@ -23,17 +28,9 @@ private:
 };
 
 
-template <class T> Arrays<T>::Arrays() {
 
-}
-
-
-template <class T> Arrays<T>::~Arrays() {
-
-}
-
-
-template <class T> void Arrays<T>::sort(T* a, int size) {
+template <class T> 
+void Arrays<T>::sort(T* a, int size) {
 
     T* aTmp;
     aTmp = a;
@@ -53,7 +50,8 @@ template <class T> void Arrays<T>::sort(T* a, int size) {
 }
 
 
-template <class T> void Arrays<T>::mergeSort(T * dest, int low, int high, int off) {
+template <class T> 
+void Arrays<T>::mergeSort(T * dest, int low, int high, int off) {
 
     T* destAct = dest;
     T* destTmp = dest;
@@ -88,4 +86,4 @@ template <class T> void Arrays<T>::mergeSort(T * dest, int low, int high, int of
     }
 }
 
-#endif // !defined(EA_5CBD0DB0_655C_49e3_8F55_23DA2EE4E272__INCLUDED_)
+#endif // !defined(EA_76DDC13C_14DA_4ff0_9539_A8B13C7030D9__INCLUDED_)

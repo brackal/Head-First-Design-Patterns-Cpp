@@ -1,24 +1,24 @@
 ///////////////////////////////////////////////////////////
 //  Comparable.h
 //  Implementation of the Interface Comparable
-//  Created on:      29-Nov-2023 22:02:37
+//  Created on:      19-Jan-2024 08:17:01
 //  Original author: abrack
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_F202D22A_ECD4_4bbd_8F93_0520A1D310B6__INCLUDED_)
-#define EA_F202D22A_ECD4_4bbd_8F93_0520A1D310B6__INCLUDED_
+#if !defined(EA_BBF8E618_D11B_4f0f_9078_1E24F4418554__INCLUDED_)
+#define EA_BBF8E618_D11B_4f0f_9078_1E24F4418554__INCLUDED_
 
 class Comparable
 {
 
 public:
-    Comparable(){
+	Comparable(){
 
-    }
-    virtual ~Comparable(){
+	}
+	virtual ~Comparable(){
 
-    }
-    virtual int compareTo(Comparable* comp) =0;
+	}
+	virtual int compareTo(Comparable* comp) =0;
 
 };
-#endif // !defined(EA_F202D22A_ECD4_4bbd_8F93_0520A1D310B6__INCLUDED_)
+#endif // !defined(EA_BBF8E618_D11B_4f0f_9078_1E24F4418554__INCLUDED_)

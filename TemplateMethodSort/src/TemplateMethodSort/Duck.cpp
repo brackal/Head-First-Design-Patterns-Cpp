@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////
 //  Duck.cpp
 //  Implementation of the Class Duck
-//  Created on:      29-Nov-2023 22:02:37
+//  Created on:      19-Jan-2024 08:17:02
 //  Original author: abrack
 ///////////////////////////////////////////////////////////
 
@@ -26,7 +26,7 @@ Duck::~Duck(){
 }
 
 
-int Duck::geWeight(){
+int Duck::getWeight(){
 
     return mWeight;
 }
@@ -37,15 +37,15 @@ int Duck::compareTo(Comparable * comp) {
 
     Duck* tmp = (Duck*)comp;
 
-    if (this->geWeight() < tmp->geWeight())
+    if (this->getWeight() < tmp->getWeight())
     {
         return -1;
     }
-    else if (this->geWeight() == tmp->geWeight())
+    else if (this->getWeight() == tmp->getWeight())
     {
         return 0;
     }
-    else //this->geWeight() > tmp->geWeight()
+    else //this->getWeight() > tmp->getWeight()
     {
         return 1;
     }

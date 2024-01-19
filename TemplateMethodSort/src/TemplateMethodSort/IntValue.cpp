@@ -1,28 +1,28 @@
 ///////////////////////////////////////////////////////////
-//  IntArray.cpp
-//  Implementation of the Class IntArray
-//  Created on:      29-Nov-2023 22:02:37
+//  IntValue.cpp
+//  Implementation of the Class IntValue
+//  Created on:      19-Jan-2024 08:17:02
 //  Original author: abrack
 ///////////////////////////////////////////////////////////
 
-#include "IntArray.h"
+#include "IntValue.h"
 
-IntArray::IntArray(){
+IntValue::IntValue(){
 }
 
-IntArray::IntArray(int value){
+IntValue::IntValue(int value){
     mData = value;
 }
 
 
-IntArray::~IntArray(){
+IntValue::~IntValue(){
 
 }
 
 
-int IntArray::compareTo(Comparable* comp){
+int IntValue::compareTo(Comparable* comp){
 
-    IntArray* tmp = (IntArray*)comp;
+    IntValue* tmp = (IntValue*)comp;
 
     if (this->getValue() < tmp->getValue())
     {
@@ -40,7 +40,7 @@ int IntArray::compareTo(Comparable* comp){
 
 
 
-int IntArray::getValue(){
+int IntValue::getValue(){
 
     return mData;
 }
