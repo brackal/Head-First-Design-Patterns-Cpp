@@ -24,6 +24,5 @@ private:
 	WeatherData mWeatherData;
 	CurrentConditionsDisplay mCurrentConditionsDisplay;
 	ThirdPartyDisplay mThirdPartyDisplay;
-
 };
 #endif // !defined(EA_01A98AC8_84E4_4160_ADC9_3293EBDEF1CD__INCLUDED_)

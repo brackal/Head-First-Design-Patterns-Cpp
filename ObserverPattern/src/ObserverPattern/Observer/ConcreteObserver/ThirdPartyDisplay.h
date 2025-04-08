@@ -11,18 +11,17 @@
 #include <iostream>
 
 #include "Observer.h"
-#include "WeatherData.h"
+#include "Subject.h"
 
 class ThirdPartyDisplay : public Observer
 {
 
 public:
-	ThirdPartyDisplay(WeatherData* weatherData);
+	ThirdPartyDisplay(Subject* weatherData);
 	virtual ~ThirdPartyDisplay();
-	virtual void update();
+	virtual void update(float temperature, float humidity);
 
 private:
-	WeatherData* mWeatherData;
-
+	Subject* mWeatherData;
 };
 #endif // !defined(EA_BA5AA97C_4C3C_4b8d_9BD8_679C2D9EA2F6__INCLUDED_)

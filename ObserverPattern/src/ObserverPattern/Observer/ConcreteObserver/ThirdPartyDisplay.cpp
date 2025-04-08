@@ -9,7 +9,7 @@
 
 
 
-ThirdPartyDisplay::ThirdPartyDisplay(WeatherData * weatherData){
+ThirdPartyDisplay::ThirdPartyDisplay(Subject * weatherData){
   mWeatherData = weatherData;
   mWeatherData->registerObserver(this);
 }
@@ -21,17 +21,9 @@ ThirdPartyDisplay::~ThirdPartyDisplay(){
 }
 
 
-void ThirdPartyDisplay::update(){
-
-  float temperature = 0.0;
-  float humidity = 0.0;
-
-  if (mWeatherData != nullptr)
-  {
-    temperature = mWeatherData->getTemperature();
-    humidity = mWeatherData->getHumidity();
-}
-
+void ThirdPartyDisplay::update(float temperature, float humidity){
+  // This is a third party display that does not need to know about the weather data object
+  // It just needs to know about the data it is displaying
   std::cout << "ThirdPartyDisplay::Temperatur: " << temperature << std::endl;
   std::cout << "ThirdPartyDisplay::Humidity: " << humidity << std::endl;
 }

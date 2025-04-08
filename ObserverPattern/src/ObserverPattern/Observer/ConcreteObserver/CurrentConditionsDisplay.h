@@ -11,18 +11,18 @@
 #include <iostream>
 
 #include "Observer.h"
-#include "WeatherData.h"
+#include "Subject.h"
 
 class CurrentConditionsDisplay : public Observer
 {
 
 public:
-	CurrentConditionsDisplay(WeatherData* weatherData);
+	CurrentConditionsDisplay(Subject* weatherData);
 	virtual ~CurrentConditionsDisplay();
-	virtual void update();
+	virtual void update(float temperature, float humidity);
 
 private:
-	WeatherData* mWeatherData;
+	Subject* mWeatherData;
 
 };
 #endif // !defined(EA_F3B6EFB5_4164_4ab2_980A_6F1964635D81__INCLUDED_)

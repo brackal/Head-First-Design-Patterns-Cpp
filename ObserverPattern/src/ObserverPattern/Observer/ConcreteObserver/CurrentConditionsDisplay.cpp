@@ -8,7 +8,7 @@
 #include "CurrentConditionsDisplay.h"
 
 
-CurrentConditionsDisplay::CurrentConditionsDisplay(WeatherData * weatherData){
+CurrentConditionsDisplay::CurrentConditionsDisplay(Subject * weatherData){
   mWeatherData = weatherData;
   mWeatherData->registerObserver(this);
 }
@@ -20,16 +20,9 @@ CurrentConditionsDisplay::~CurrentConditionsDisplay(){
 }
 
 
-void CurrentConditionsDisplay::update(){
-
-  float temperature = 0.0;
-  float humidity = 0.0;
-
-  if (mWeatherData != nullptr)
-  {
-    temperature = mWeatherData->getTemperature();
-    humidity = mWeatherData->getHumidity();
-  }
+void CurrentConditionsDisplay::update(float temperature, float humidity){
+  // This is a current conditions display that needs to know about the weather data object
+  // It just needs to know about the data it is displaying
   std::cout << "CurrentConditionsDisplay::Temperatur: " << temperature << std::endl;
   std::cout << "CurrentConditionsDisplay::Humidity: " << humidity << std::endl;
 }

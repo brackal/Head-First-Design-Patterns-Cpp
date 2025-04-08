@@ -13,12 +13,11 @@ class Observer
 
 public:
 	Observer(){
-
 	}
+
 	virtual ~Observer(){
-
 	}
-	virtual void update() =0;
 
+	virtual void update(float temperature, float humidity) = 0;
 };
 #endif // !defined(EA_4364F2B3_CB97_4f41_82BB_2759E57A887C__INCLUDED_)

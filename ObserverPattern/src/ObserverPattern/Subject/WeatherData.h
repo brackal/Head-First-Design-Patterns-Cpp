@@ -28,7 +28,6 @@ public:
 private:
 	float mTemperature;
 	float mHumidity;
-	float mPressure;
 	std::list <Observer* > mObserverList;
 
 	void measurementsChanged();

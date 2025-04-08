@@ -33,6 +33,10 @@ void Client::run(){
 	while (1)
 	{
 		std::cout << "Press 'm' or 'M' to simulate a new measurement\n";
+		std::cout << "Press 'T' to unregister Third Party Display\n";
+		std::cout << "Press 't' to register Third Party Display\n";
+		std::cout << "Press 'C' to unregister Current Conditions Display\n";
+		std::cout << "Press 'c' to register Current Conditions Display\n";
 		while (1)
 		{
 			switch (getchar())

@@ -30,7 +30,7 @@ void WeatherData::notifyObserverList(){
   {
     if (observer != nullptr)
     {
-      observer->update();
+      observer->update(mTemperature, mHumidity);
     }
   }
 }
