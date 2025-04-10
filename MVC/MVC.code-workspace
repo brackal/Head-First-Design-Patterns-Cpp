@@ -1,0 +1,85 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+
+	// Recommended Extensions for this project
+	"extensions": {
+		"recommendations": [	
+		  // C/C++ IntelliSense
+		  "ms-vscode.cpptools",
+		  "ms-vscode.cpptools-extension-pack",
+		],
+		"unwantedRecommendations": []
+	  },
+
+	"settings": {
+		"files.associations": {
+			"list": "cpp",
+			"xmemory": "cpp",
+			"xstring": "cpp",
+			"initializer_list": "cpp",
+			"utility": "cpp",
+			"xutility": "cpp",
+			"atomic": "cpp",
+			"bit": "cpp",
+			"cctype": "cpp",
+			"charconv": "cpp",
+			"clocale": "cpp",
+			"cmath": "cpp",
+			"compare": "cpp",
+			"concepts": "cpp",
+			"cstddef": "cpp",
+			"cstdint": "cpp",
+			"cstdio": "cpp",
+			"cstdlib": "cpp",
+			"cstring": "cpp",
+			"ctime": "cpp",
+			"cwchar": "cpp",
+			"exception": "cpp",
+			"format": "cpp",
+			"ios": "cpp",
+			"iosfwd": "cpp",
+			"iostream": "cpp",
+			"istream": "cpp",
+			"iterator": "cpp",
+			"limits": "cpp",
+			"locale": "cpp",
+			"memory": "cpp",
+			"new": "cpp",
+			"ostream": "cpp",
+			"stdexcept": "cpp",
+			"streambuf": "cpp",
+			"string": "cpp",
+			"system_error": "cpp",
+			"tuple": "cpp",
+			"type_traits": "cpp",
+			"typeinfo": "cpp",
+			"xfacet": "cpp",
+			"xiosbase": "cpp",
+			"xlocale": "cpp",
+			"xlocbuf": "cpp",
+			"xlocinfo": "cpp",
+			"xlocmes": "cpp",
+			"xlocmon": "cpp",
+			"xlocnum": "cpp",
+			"xloctime": "cpp",
+			"xtr1common": "cpp"
+		},
+
+		"editor.insertSpaces": true, // Insert spaces when pressing Tab.
+		"editor.tabSize": 4, // The number of spaces a tab is equal to.
+		"editor.wordWrapColumn": 180, // Wrap text at the specified line length.
+		"editor.detectIndentation": true, // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": false,
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+
+
+		// C|C++ Extension
+		"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0 }",
+		"C_Cpp.clang_format_sortIncludes": true,
+	}
+}
