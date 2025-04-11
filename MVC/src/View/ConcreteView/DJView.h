@@ -23,8 +23,14 @@ class DJView : public ICB_BpmObserver, public ICB_BeatObserver {
     virtual void UpdateBeat();
     virtual void UpdateBpm();
 
+    void Run();
+
    private:
     I_Controller* controller;
     I_BeatModel* model;
+
+    void PressIncreaseBpm();
+    void PressDecreaseBpm();
+    void PressSetBpm();
 };
 #endif  // !defined(DJVIEW_H_)

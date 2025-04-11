@@ -18,6 +18,8 @@ BeatController::~BeatController() {
 }
 
 void BeatController::Start() {
+    view->Run();  // Start the view
+
     if (model) {
         model->On();  // Turn on the model
     }

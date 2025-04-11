@@ -16,7 +16,8 @@ void Client::Run() {
     BeatModel model;
     // DJView view(nullptr, &model);  // Pass the model to the view
     BeatController controller(&model);  // Pass the model to the controller
-
+    controller.Start();                 // Start the controller, which will also start the view
+#if 0
     std::cout << "Press 1 to select DJ-View'\n";
     std::cout << "Press 2 to select DJ-Control'\n";
 
@@ -43,4 +44,5 @@ void Client::Run() {
                 break;
         }
     }
+#endif
 }
