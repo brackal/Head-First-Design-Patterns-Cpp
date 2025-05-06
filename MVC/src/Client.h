@@ -17,7 +17,5 @@ class Client {
    public:
     Client();
     virtual ~Client();
-
-    void Run();
 };
 #endif  // !defined(CLIENT_H_)

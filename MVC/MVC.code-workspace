@@ -66,7 +66,16 @@
 			"xlocmon": "cpp",
 			"xlocnum": "cpp",
 			"xloctime": "cpp",
-			"xtr1common": "cpp"
+			"xtr1common": "cpp",
+			"ratio": "cpp",
+			"stop_token": "cpp",
+			"thread": "cpp",
+			"chrono": "cpp",
+			"forward_list": "cpp",
+			"iomanip": "cpp",
+			"optional": "cpp",
+			"sstream": "cpp",
+			"vector": "cpp"
 		},
 
 		"editor.insertSpaces": true, // Insert spaces when pressing Tab.

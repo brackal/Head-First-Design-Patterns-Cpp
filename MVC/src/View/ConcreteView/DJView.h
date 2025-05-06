@@ -32,5 +32,8 @@ class DJView : public ICB_BpmObserver, public ICB_BeatObserver {
     void PressIncreaseBpm();
     void PressDecreaseBpm();
     void PressSetBpm();
+
+    void PressStartBeat();
+    void PressStopBeat();
 };
 #endif  // !defined(DJVIEW_H_)

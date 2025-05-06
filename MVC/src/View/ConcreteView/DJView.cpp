@@ -15,12 +15,15 @@ DJView::DJView(I_Controller* controller, I_BeatModel* model) : controller(contro
         model->Register((ICB_BpmObserver*)this);   // Register as a BPM observer
         model->Register((ICB_BeatObserver*)this);  // Register as a Beat observer
     }
+
+    this->Run();
 }
 
 DJView::~DJView() {
 }
 
 void DJView::UpdateBeat() {
+    std::cout << "Beat in real time with: " << model->GetBpm() << "BPM! " << std::endl;
 }
 
 void DJView::UpdateBpm() {
@@ -61,10 +64,28 @@ void DJView::PressSetBpm() {
     }
 }
 
+void DJView::PressStartBeat() {
+    if (controller) {
+        controller->Start();  // Start the beat
+    } else {
+        std::cout << "Controller is not set!" << std::endl;
+    }
+}
+
+void DJView::PressStopBeat() {
+    if (controller) {
+        controller->Stop();  // Stop the beat
+    } else {
+        std::cout << "Controller is not set!" << std::endl;
+    }
+}
+
 void DJView::Run() {
     std::cout << "Press 1 to set BPM'\n";
     std::cout << "Press 2 to increase BPM'\n";
     std::cout << "Press 3 to decrease BPM'\n";
+    std::cout << "Press 4 to start Beat'\n";
+    std::cout << "Press 5 to stop Beat'\n";
 
     while (1) {
         int userInput;
@@ -78,17 +99,22 @@ void DJView::Run() {
                 break;
 
             case 2:
-                // std::cout << "userInput: " << userInput << "\n";
                 this->PressIncreaseBpm();
                 break;
 
             case 3:
-                // std::cout << "userInput: " << userInput << "\n";
                 this->PressDecreaseBpm();
                 break;
 
+            case 4:
+                this->PressStartBeat();
+                break;
+
+            case 5:
+                this->PressStopBeat();
+                break;
+
             default:
-                // std::cout << "userInput: " << userInput << "\n";
                 std::cout << "Invalid user input!\n";
                 break;
         }
